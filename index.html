@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kristofer Box</title>
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/main/main.css" rel="stylesheet" id="mainCSS"/>
+        <script src="javascript/jquery-2.1.4.js"></script>
+        <script src="javascript/hoverIntent.js"></script>
+        <script src="javascript/checkMobile.js"></script>
+    </head>
+    <body>
+        <div id="headWrapper">
+        </div>
+
+        <div id="navWrapper">
+            <nav>
+                <!--- The normal navigation bar that is disabled when a mobile is detected --->
+                <ul id="normalNav">
+                    <div class="line">
+                        <li id><a id = "homeLink" href="#">
+                            <img src="images/main/home.svg">
+                            <div id="homeText" class="active"></div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a id = "aboutLink" href="#">
+                            <img src="images/main/about_me.svg">
+                            <div id="aboutText"></div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a id = "workLink" href="#">
+                            <img src="images/main/work.svg">
+                            <div id="workText"></div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a id = "contactLink" href="#">
+                            <img src="images/main/contact.svg">
+                            <div id="contactText"></div>
+                        </a></li>
+                    </div>
+
+                    <div class="socialText"></div>
+                    <nav>
+                        <ul class="Extras">
+                            <div class="lineX">
+                                <li><a href="https://www.facebook.com/kristofer.box.5" target="_blank">
+                                    <img src="images/main/facebook.svg">
+                                    <div id="facebookText"></div>
+                                </a></li>
+                            </div>
+                            <div class="lineX">
+                                <li><a href="https://twitter.com/KrisB96" target="_blank">
+                                    <img src="images/main/twitter.svg">
+                                    <div id="twitterText"></div>
+                                </a></li>
+                            </div>
+                            <div class="lineX">
+                                <li><a href="https://www.instagram.com/kris_box96/" target="_blank">
+                                    <img src="images/main/instagram.svg">
+                                    <div id="instagramText"></div>
+                                </a></li>
+                            </div>
+                            <div class="lineX">
+                                <li><a href="https://github.com/CommonID" target="_blank">
+                                    <img src="images/main/github.svg">
+                                    <div id="githubText"></div>
+                                </a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </ul>
+
+
+
+                <div id="mobileButton">
+                    <img src="images/main/menu.svg">
+                </div>
+
+                <!--- The mobile navigation that is activated when a mobile is detected --->
+                <ul class="mobileNav" id="menu">
+                    <div class="line">
+                        <li><a href="index.html">
+                            <img src="images/main/home.svg">
+                            <div class="menuText active">home.</div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a href="pages/about.html">
+                            <img src="images/main/about_me.svg">
+                            <div class="menuText">about me.</div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a href="pages/work.html">
+                            <img src="images/main/work.svg">
+                            <div class="menuText">work.</div>
+                        </a></li>
+                    </div>
+                    <div class="line">
+                        <li><a href="pages/contact.html">
+                            <img src="images/main/contact.svg">
+                            <div class="menuText">contact.</div>
+                        </a></li>
+                    </div>
+
+                    <div class="socialText">social.</div>
+                    <div class="Extras">
+                        <ul>
+                            <li><a href="https://www.facebook.com/kristofer.box.5" target="_blank">
+                                <img src="images/main/facebook.svg">
+                            </a></li>
+                            <li><a href="https://twitter.com/KrisB96" target="_blank">
+                                <img src="images/main/twitter.svg">
+                            </a></li>
+                            <li><a href="https://www.instagram.com/kris_box96/" target="_blank">
+                                <img src="images/main/instagram.svg">
+                            </a></li>
+                            <li><a href="https://github.com/CommonID" target="_blank">
+                                <img src="images/main/github.svg">
+                            </a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+
+
+            <!--- Script for Mobile Menu --->
+            <script src="javascript/changePage.js"></script>
+            <script src="javascript/menuAction.js"></script>
+            <script src="javascript/MenuRespond.js"></script>
+
+
+        </div>
+        <div id="otherWrapper">
+            <main>
+                <header>
+                    <h1>Kristofer J. Box</h1>
+                </header>
+
+                <div id="homePage">
+                    <h1>welcome to my website.</h1>
+                    <p>
+                        My name is Kristofer Box and this is my personal website where you will find out everything you
+                        need to know about me and what I do.<br>
+                        This website consists of four sections: This homepage, an about me page, the work I do and how to
+                        contact me. Please feel free to look around and see my work.<br>
+                    </p>
+
+                    <h3>Thank you for visiting!</h3>
+                </div>
+
+                <div id="aboutPage">
+                    <h1>about me.</h1>
+                    <p>
+                        this is a page. this is a page. this is the a page. this is the a page.
+                    </p>
+
+                    <h3>this is a page.</h3>
+                </div>
+
+                <div id="workPage">
+                    <h1>my work.</h1>
+                    <p>
+                        this is a page. this is a page. this is the a page. this is the a page.
+                    </p>
+
+                    <h3>this is a page.</h3>
+                </div>
+                <div id="contactPage">
+                    <h1>contact me.</h1>
+                    <p>
+                        this is a page. this is a page. this is the a page. this is the a page.
+                    </p>
+
+                    <h3>this is a page.</h3>
+                </div>
+            </main>
+
+            <footer>
+                <a href="pages/disclaimer.html">Disclaimer</a><br><br>
+                <p>&copy 2016<br>Kristofer Box</p>
+            </footer>
+        </div>
+    </body>
+</html>

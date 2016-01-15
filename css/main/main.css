@@ -1,0 +1,207 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Main CSS Styling for every page (Normal)
+    Author: Kristofer Box
+    Created: 20/12/2015
+    Last Updated: 20/12/2015
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500,400);
+
+body {
+    font-family:  'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #212121;  /*#616161*/
+    min-width: 600px;
+    color:#9E9E9E;
+}
+
+a:hover{
+    color: #009688;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #009688;
+}
+
+
+span {
+    color:#404040;
+}
+
+figcaption {
+    font-size: 0.5em;
+    text-align: center;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End General Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Wrapper Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#navWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6%;
+    background: #212121;
+    text-align: center;
+    /*: 10px 0 25px -2px #404040;*/
+
+
+}
+
+#otherWrapper {
+    position: relative;
+    margin-left: 10%;
+    width: 87.5%;
+    padding: 0 1em;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Wrapper Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main p{
+    text-align: center;
+    padding: 2em 0;
+    font-size: 1.1em;
+}
+main h3{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+main h1{
+    text-align: center;
+}
+
+#aboutPage, #workPage, #contactPage{
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Main Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#Title {
+    padding: 0 0 1em 0;
+}
+
+#accessibility {
+    text-align: right;
+    padding: 0.5em 0.5em 0 0;
+    font-size: 1.25em;
+}
+
+#accessibility a {
+    text-decoration: none;
+    outline: none;
+    color: #DCDCDC;
+}
+
+#accessibility a:hover {
+    color:#404040;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Header Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.active{
+    color:#009688;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-bottom:25px;
+    padding-top: 2em;
+
+}
+
+nav a {
+    font-size: 1.8em;
+    text-decoration: none;
+    outline: none;
+    color: #9E9E9E;
+}
+
+.Extras a{
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: #009688;
+}
+
+ul.mobileNav {
+    display: none;
+}
+
+#mobileButton{
+    display:none;
+}
+
+nav img{
+    float: left;
+    margin-left: 12.5%;
+}
+
+.line{
+    padding: 0.5em;
+    height: 5em;
+}
+
+.lineX{
+    padding: 0.5em;
+    height: 3em;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Navigation Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.socialText{
+    padding-top: 2em;
+    color: #9E9E9E;
+    margin: 0;
+    font-size:1.8em;
+    height:3em;
+}
+
+.Extras{
+    color: #9E9E9E;
+    margin: 0;
+    height: 5em;
+}
+
+.Extras img{
+    float: left;
+    margin-left: 12.5%;
+}
+
+footer{
+    text-align: center;
+    color:#9E9E9E;
+    bottom: 20px;
+    width: inherit;
+    position: fixed;
+}
+
+footer a{
+    padding: 2em 0;
+    text-decoration: none;
+    outline: none;
+    color: #9E9E9E;
+}
+
+footer a:hover{
+    color: #009688;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Footer Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
