@@ -36,7 +36,7 @@ header h1 {
 
 
 span {
-    color:#404040;
+    color:#009688;
 }
 
 figcaption {
@@ -150,7 +150,7 @@ ul.mobileNav {
     display:none;
 }
 
-nav img{
+#navWrapper img{
     float: left;
     margin-left: 12.5%;
 }
@@ -165,6 +165,109 @@ nav img{
     height: 3em;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Navigation Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Work Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#work{
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.imageLink{
+    min-height: 18%;
+    min-width: 33%;
+    max-height: 18%;
+    max-width: 33%;
+    text-align: center;
+    display: inline-table;
+    overflow: hidden;
+    padding: 0.5em;
+}
+
+.imageLink img{
+    min-height: 20em;
+    min-width: 40em;
+    max-height: 20em;
+    max-width: 40em;
+    text-align: center;
+    margin-left: 0;
+    background-color: #9E9E9E;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+
+.imageLink figure:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.imageLink h3{
+    margin-top: 2em;
+}
+.imageLink p{
+    font-size: 1em;
+    padding: 0.5em;
+    color: #9E9E9E;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Work Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Form Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+form{
+    width: 50%;
+    color: #9E9E9E;
+    text-align: center;
+    margin: auto;
+}
+
+label{
+    font-size: 1.5em;
+}
+
+select:focus{
+    outline: none;
+}
+
+input, textarea, select{
+    font-size: 1.2em;
+    width: 50%;
+    height: 2em;
+    background: transparent;
+    border: 2px solid #009688;
+    color:#9E9E9E;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    padding: 0.25em;
+}
+
+select{
+    background: #212121;
+}
+
+textarea{
+    font-size: 1.2em;
+    max-width: 50%;
+}
+
+button{
+    width: 50%;
+    background: #9E9E9E;
+    color: #212121;
+    border: none;
+    height: 3em;
+    border-radius: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Form Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Tags ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .socialText{

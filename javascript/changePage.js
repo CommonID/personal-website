@@ -1,82 +1,85 @@
 jQuery(document).ready(function() {
-    $('#homeLink').click(function(){
+    if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $('#homeLink').click(function () {
 
-        if ($('#aboutText').hasClass('active')){
-            $('#aboutText').removeClass('active');
-            $('#aboutPage').fadeOut(500);
-        }else if ($('#workText').hasClass('active')){
-            $('#workText').removeClass('active');
-            $('#workPage').fadeOut(500);
-        }else if($('#contactText').hasClass('active')){
-            $('#contactText').removeClass('active');
-            $('#contactPage').fadeOut(500);
-        }
+            if ($('#aboutText').hasClass('active')) {
+                $('#aboutText').removeClass('active');
+                $('#aboutPage').fadeOut(500);
+            } else if ($('#workText').hasClass('active')) {
+                $('#workText').removeClass('active');
+                $('#workPage').fadeOut(500);
+            } else if ($('#contactText').hasClass('active')) {
+                $('#contactText').removeClass('active');
+                $('#contactPage').fadeOut(500);
+            }
 
-        $('#homeText').addClass('active');
+            $('#homeText').addClass('active');
 
-        setTimeout(function(){
-            $('#homePage').fadeIn(500);
-        }, 600);
-    });
+            setTimeout(function () {
+                $('#homePage').fadeIn(500);
+            }, 600);
+        });
 
-    $('#aboutLink').click(function(){
+        $('#aboutLink').click(function () {
 
-        if ($('#homeText').hasClass('active')){
-            $('#homeText').removeClass('active');
-            $('#homePage').fadeOut(500);
-        }else if ($('#workText').hasClass('active')){
-            $('#workText').removeClass('active');
-            $('#workPage').fadeOut(500);
-        }else if($('#contactText').hasClass('active')){
-            $('#contactText').removeClass('active');
-            $('#contactPage').fadeOut(500);
-        }
+            if ($('#homeText').hasClass('active')) {
+                $('#homeText').removeClass('active');
+                $('#homePage').fadeOut(500);
+            } else if ($('#workText').hasClass('active')) {
+                $('#workText').removeClass('active');
+                $('#workPage').fadeOut(500);
+            } else if ($('#contactText').hasClass('active')) {
+                $('#contactText').removeClass('active');
+                $('#contactPage').fadeOut(500);
+            }
 
-        $('#aboutText').addClass('active');
+            $('#aboutText').addClass('active');
 
-        //Add text
-        setTimeout(function(){
-            $('#aboutPage').fadeIn(500);
-        }, 600);
-    });
+            //Add text
+            setTimeout(function () {
+                $('#aboutPage').fadeIn(500);
+            }, 600);
+        });
 
-    $('#workLink').click(function(){
+        $('#workLink').click(function () {
 
-        if ($('#homeText').hasClass('active')){
-            $('#homeText').removeClass('active');
-            $('#homePage').fadeOut(500);
-        }else if ($('#aboutText').hasClass('active')){
-            $('#aboutText').removeClass('active');
-            $('#aboutPage').fadeOut(500);
-        }else if($('#contactText').hasClass('active')){
-            $('#contactText').removeClass('active');
-            $('#contactPage').fadeOut(500);
-        }
+            if ($('#homeText').hasClass('active')) {
+                $('#homeText').removeClass('active');
+                $('#homePage').fadeOut(500);
+            } else if ($('#aboutText').hasClass('active')) {
+                $('#aboutText').removeClass('active');
+                $('#aboutPage').fadeOut(500);
+            } else if ($('#contactText').hasClass('active')) {
+                $('#contactText').removeClass('active');
+                $('#contactPage').fadeOut(500);
+            }
 
-        $('#workText').addClass('active');
+            $('#workText').addClass('active');
 
-        setTimeout(function(){
-            $('#workPage').fadeIn(500);
-        }, 600);
-    });
+            setTimeout(function () {
+                $('#workPage').fadeIn(500);
+            }, 600);
+        });
 
-    $('#contactLink').click(function(){
+        $('#contactLink').click(function () {
 
-        if ($('#homeText').hasClass('active')){
-            $('#homeText').removeClass('active');
-            $('#homePage').fadeOut(500);
-        }else if ($('#workText').hasClass('active')){
-            $('#workText').removeClass('active');
-            $('#workPage').fadeOut(500);
-        }else if($('#aboutText').hasClass('active')){
-            $('#aboutText').removeClass('active');
-            $('#aboutPage').fadeOut(500);
-        }
+            if ($('#homeText').hasClass('active')) {
+                $('#homeText').removeClass('active');
+                $('#homePage').fadeOut(500);
+            } else if ($('#workText').hasClass('active')) {
+                $('#workText').removeClass('active');
+                $('#workPage').fadeOut(500);
+            } else if ($('#aboutText').hasClass('active')) {
+                $('#aboutText').removeClass('active');
+                $('#aboutPage').fadeOut(500);
+            }
 
-        $('#contactText').addClass('active');
+            $('#contactText').addClass('active');
 
-        setTimeout(function(){
-            $('#contactPage').fadeIn(500);
-        }, 600);
-    });
+            setTimeout(function () {
+                $('#contactPage').fadeIn(500);
+            }, 600);
+        });
+
+    }
 });

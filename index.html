@@ -10,9 +10,6 @@
         <script src="javascript/checkMobile.js"></script>
     </head>
     <body>
-        <div id="headWrapper">
-        </div>
-
         <div id="navWrapper">
             <nav>
                 <!--- The normal navigation bar that is disabled when a mobile is detected --->
@@ -82,27 +79,27 @@
                 <!--- The mobile navigation that is activated when a mobile is detected --->
                 <ul class="mobileNav" id="menu">
                     <div class="line">
-                        <li><a href="index.html">
+                        <li><a href="#">
                             <img src="images/main/home.svg">
-                            <div class="menuText active">home.</div>
+                            <div class="mobHomeText active">home.</div>
                         </a></li>
                     </div>
                     <div class="line">
-                        <li><a href="pages/about.html">
+                        <li><a href="#">
                             <img src="images/main/about_me.svg">
-                            <div class="menuText">about me.</div>
+                            <div class="mobAboutText">about me.</div>
                         </a></li>
                     </div>
                     <div class="line">
-                        <li><a href="pages/work.html">
+                        <li><a href="#">
                             <img src="images/main/work.svg">
-                            <div class="menuText">work.</div>
+                            <div class="mobWorkText">work.</div>
                         </a></li>
                     </div>
                     <div class="line">
-                        <li><a href="pages/contact.html">
+                        <li><a href="#">
                             <img src="images/main/contact.svg">
-                            <div class="menuText">contact.</div>
+                            <div class="mobContactText">contact.</div>
                         </a></li>
                     </div>
 
@@ -144,9 +141,11 @@
                     <h1>welcome to my website.</h1>
                     <p>
                         My name is Kristofer Box and this is my personal website where you will find out everything you
-                        need to know about me and what I do.<br>
-                        This website consists of four sections: This homepage, an about me page, the work I do and how to
-                        contact me. Please feel free to look around and see my work.<br>
+                        need to know about me and what I do.<br><br> The website has been created as a personal space and to accompany my CV.<br><br>
+                        It consists of four sections: This homepage, an about me page, the work I do and how to
+                        contact me. Please feel free to look around and learn about me.<br>
+                        You will notice how the website is very responsive for both desktop and mobile, making it easy for anybody
+                        to use no matter where they are.<br>
                     </p>
 
                     <h3>Thank you for visiting!</h3>
@@ -155,27 +154,82 @@
                 <div id="aboutPage">
                     <h1>about me.</h1>
                     <p>
-                        this is a page. this is a page. this is the a page. this is the a page.
+                        I am a Computer Science Masters Undergraduate at the University of Sheffield studying my first
+                        year. However I reside from Burnley, a small town in the North near Manchester. My Computer
+                        Science career started when I was younger, dabbling in <span>Python</span> until eventually using it as a
+                        language in college.<br> Now I am competent using
+                        <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>,
+                        <span>Ruby</span>, <span>Java</span> and <span>C#</span>
+                        giving me a diverse range of programming skills. You can see these skills in practise on my Work page
+                        or going onto my github page through the social links.
                     </p>
 
-                    <h3>this is a page.</h3>
                 </div>
 
                 <div id="workPage">
                     <h1>my work.</h1>
                     <p>
-                        this is a page. this is a page. this is the a page. this is the a page.
+                        On this page, you can see all the work I've made or contributed to making.
                     </p>
+                    <div id="work">
+                        <div class = "imageLink">
+                            <figure id="work1">
+                                <a href="pages/COM1008 Website/index.html">
+                                    <img src="images/work/com1008.png" alt = "COM1008 website link">
+                                </a>
 
-                    <h3>this is a page.</h3>
+                            </figure>
+                            <h3>Module Website</h3>
+                            <p>
+                                A website I created for an assignment in University. As you will see upon viewing,
+                                this website does take some inspiration from this but both are very structurally
+                                different.
+                            </p>
+                        </div>
+
+                        <div class = "imageLink">
+                            <figure id="work2">
+                                <img src="images/work/java.jpg" alt = "JavaHub website Link">
+                            </figure>
+
+                            <h3>The JavaHub COMING SOON</h3>
+                            <p>
+                                A special website made by me which lets you see Java tutorials, code snippets and exercise.
+                                <br><br> DUE: LATE SUMMER 2016.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div id="contactPage">
                     <h1>contact me.</h1>
                     <p>
-                        this is a page. this is a page. this is the a page. this is the a page.
+                        On this page, you can email me a comment or enquiry in which I will promptly reply to.
                     </p>
 
-                    <h3>this is a page.</h3>
+                    <form>
+                        <label for = "name">Name</label><br>
+                        <input id = "name" type="text" maxlength="40" required="required" name="name"
+                               placeholder="John Doe"><br>
+
+                        <label for = "email">Email Address</label><br>
+                        <input id = "email" type="email" required="required" name="email"
+                               placeholder="email@email.com"><br>
+
+                        <label for="type">Type of Comment</label><br>
+                        <select id="type" name="type" required="required">
+                            <option>Choose a type</option>
+                            <option>General Comment</option>
+                            <option>Enquiry for Work</option>
+                        </select><br>
+
+
+                        <label for="comment">Comments</label><br>
+                        <textarea id="comment" name="comment" required="required"></textarea>
+
+                        <br>
+                        <button>Submit</button>
+                    </form>
+
                 </div>
             </main>
 
