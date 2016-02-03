@@ -206,7 +206,7 @@
                         On this page, you can email me a comment or enquiry in which I will promptly reply to.
                     </p>
 
-                    <form>
+                    <form method="post" action ="php/email.php">
                         <label for = "name">Name</label><br>
                         <input id = "name" type="text" maxlength="40" required="required" name="name"
                                placeholder="John Doe"><br>
@@ -227,7 +227,7 @@
                         <textarea id="comment" name="comment" required="required"></textarea>
 
                         <br>
-                        <button>Submit</button>
+                        <input type="submit" name = "send" value="Send Message">
                     </form>
 
                 </div>
